@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/google/sunfish
+
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
@@ -36,5 +38,9 @@ BOARD_SEPOLICY_DIRS += device/google/sunfish/sepolicy-evolution/vendor
 
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sunfish
+TARGET_RECOVERY_DEVICE_MODULES := libinit_sunfish
 
 include vendor/google/sunfish/BoardConfigVendor.mk
