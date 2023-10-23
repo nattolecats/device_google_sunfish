@@ -15,6 +15,7 @@
 #
 
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 ifdef PHONE_CAR_BOARD_PRODUCT
   include device/google_car/$(PHONE_CAR_BOARD_PRODUCT)/BoardConfig.mk
