@@ -16,9 +16,9 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_sunfish.mk \
-    $(LOCAL_DIR)/derp_sunfish.mk
+    $(LOCAL_DIR)/evolution_sunfish.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_sunfish-userdebug \
-    derp_sunfish-userdebug \
-    derp_sunfish-eng
+    evolution_sunfish-userdebug \
+    evolution_sunfish-eng
