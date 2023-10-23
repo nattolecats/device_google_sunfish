@@ -1,0 +1,1 @@
+allow dataservice_app radio_data_file:file { create open rename unlink };

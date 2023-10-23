@@ -1,0 +1,1 @@
+allow logpersist metadata_file:dir { add_name open search read write };

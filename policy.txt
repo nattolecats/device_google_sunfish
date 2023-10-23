@@ -1,0 +1,4 @@
+
+
+#============= cameraserver ==============
+allow cameraserver camera_prop:file open;
